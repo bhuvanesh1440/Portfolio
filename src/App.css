@@ -785,8 +785,8 @@ form textarea {
     display: none;
   }
   .navbar a i{
-    font-size: 24px;
-    margin-left: 10px;
+    font-size: 20px;
+    
     
   }
   .logo {
@@ -795,7 +795,7 @@ form textarea {
 
   .navbar a {
     font-size: 20px;
-    margin-left: 20px;
+    
   }
   .home-img {
     margin-left: auto;
