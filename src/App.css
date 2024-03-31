@@ -786,7 +786,8 @@ form textarea {
   }
   .navbar a i{
     font-size: 24px;
-    margin-left: 1rem;
+    margin-left: 10px;
+    
   }
   .logo {
     font-size: 24px;
@@ -837,7 +838,7 @@ form textarea {
   }
   .about-text p{
     font-size: 16px;
-    padding: 1rem
+    
   }
   .about-img {
     margin-left: 0;

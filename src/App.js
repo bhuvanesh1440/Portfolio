@@ -33,7 +33,7 @@ function App() {
     <div className="body">
       <header className="header">
         <a href="#" className="logo">
-        Portfolio <i class="fa-solid fa-user-tie"></i>
+        MyPortfolio <i class="fa-solid fa-user-tie"></i>
           
         </a>
 
