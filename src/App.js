@@ -141,52 +141,89 @@ function App() {
       </section>
 
       <section>
-        <div class="services" id="services">
-          <div class="container">
-            <h1 class="sub-title">
-              My <span>Services</span>
-            </h1>
-            <div class="services-list">
-              <div>
-                <i class="fas fa-code" style={{"color": "#00eeff"}}></i>
-                <h2>UI/UX Design</h2>
-                <p>
-                  Welcome to my UI/UX design services—a world where creativity
-                  meets functionality to craft exceptional user experiences!
-                </p>
-                <a href=""target="_blank" class="read">
-                  Learn More
-                </a>
-              </div>
+  <div class="services" id="services">
+    <div class="container">
+      <h1 class="sub-title">
+        My <span>Services</span>
+      </h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-react" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fab fa-node" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fas fa-database" style={{"color": "#00eeff"}}></i>&emsp;
 
-              <div>
-                <i class="fas fa-crop" style={{"color": "#00eeff"}}></i>
-
-                <h2>UI/UX Design</h2>
-                <p>
-                  Welcome to my UI/UX design services—a world where creativity
-                  meets functionality to craft exceptional user experiences!
-                </p>
-                <a href=""target="_blank" class="read">
-                  Learn More
-                </a>
-              </div>
-
-              <div>
-                <i class="fab fa-apple" style={{"color": "#00eeff"}}></i>
-                <h2>UI/UX Design</h2>
-                <p>
-                  Welcome to my UI/UX design services—a world where creativity
-                  meets functionality to craft exceptional user experiences!
-                </p>
-                <a href=""target="_blank" class="read">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
+          <h2>MERN STACK</h2>
+          <p>
+            Craft fully interactive and scalable web applications using the powerful MERN (MongoDB, Express.js, React.js, Node.js) stack. From dynamic user interfaces to robust backend functionalities, I transform your ideas into digital experiences.
+          </p>
+          <a href="" target="_blank" class="read">Learn More</a>
         </div>
-      </section>
+
+        <div>
+          <i class="fa-brands fa-angular" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fab fa-node" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fas fa-database" style={{"color": "#00eeff"}}></i>&emsp;
+
+          <h2>MEAN STACK</h2>
+          <p>
+            Dive into the world of MEAN (MongoDB, Express.js, Angular.js, Node.js) stack to build dynamic and immersive web applications. Seamlessly integrate frontend and backend components for a seamless user experience.
+          </p>
+          <a href="" target="_blank" class="read">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fab fa-html5" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fab fa-css3-alt" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fab fa-js-square" style={{"color": "#00eeff"}}></i>&emsp;
+
+          <h2>Frontend Development</h2>
+          <p>
+            Elevate user experiences with captivating frontend development. From stunning designs to responsive layouts, I create visually appealing and interactive interfaces that engage your audience.
+          </p>
+          <a href="" target="_blank" class="read">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fas fa-database" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fas fa-cogs" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fab fa-node" style={{"color": "#00eeff"}}></i>
+
+          <h2>Backend Development</h2>
+          <p>
+            Empower your web applications with robust backend solutions. From data management to server-side logic, I ensure seamless functionality and performance for your digital platforms.
+          </p>
+          <a href="" target="_blank" class="read">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fas fa-robot" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fas fa-tools" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fas fa-microchip" style={{"color": "#00eeff"}}></i>&emsp;
+
+          <h2>Machine Learning Solutions</h2>
+         
+          <p>
+            Embrace the power of AI with innovative machine learning solutions. From predictive analytics to intelligent automation, I unlock new possibilities and efficiencies for your business operations.
+          </p>
+          <a href="" target="_blank" class="read">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fas fa-desktop" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fas fa-mobile-alt" style={{"color": "#00eeff"}}></i>&emsp;
+          <i class="fas fa-tablet-alt" style={{"color": "#00eeff"}}></i>&emsp;
+
+          <h2>Responsive Design</h2>
+          <p>
+            Ensure seamless user experiences across all devices with responsive design solutions. I create adaptable and visually appealing interfaces that scale beautifully on desktops, tablets, and mobile devices.
+          </p>
+          <a href="" target="_blank" class="read">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <h1 class="sub-title">
         My <span>Skills</span>
@@ -242,6 +279,16 @@ function App() {
                 <span>React.js</span>
               </div>
               <div class="progress-line react">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <i style={{"color": "red"}} class="fab fa-angular"></i>
+              <div class="info">
+                <span>Angular</span>
+              </div>
+              <div class="progress-line angular">
                 <span></span>
               </div>
             </div>
