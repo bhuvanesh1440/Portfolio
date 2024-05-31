@@ -8,6 +8,7 @@
   .body {
     color: #ededed;
     background-color: #081b29;
+    
   }
   .header {
     position: fixed;
@@ -602,6 +603,15 @@
   .row:hover .layer {
     height: 100%;
   }
+
+.slideshow{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: -15%;
+}
+
   
   .contact {
     display: grid;
@@ -881,6 +891,46 @@
     .Technical-bars .bar {
       margin-top: 20px;
     }
+    
+  .layer h5 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+    margin:15px 0 15px 0;
+   
+  }
+  
+  .layer p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .layer i {
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .layer .media{
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    
+  }
+    .slideshow{
+      margin-top: -60%;
+    }
   
     .contact {
       grid-template-columns: 1fr;
@@ -950,12 +1000,16 @@
     }
   
     .logo {
-      font-size: 20px;
+      font-size: 10px;
     }
   
     .navbar a {
-      font-size: 18px;
+      font-size: 10px;
       margin-left: 15px;
+    }
+    .navbar a i{
+      font-size: 10px;
+
     }
   
     .home-content h3 {
@@ -987,6 +1041,10 @@
   
     .Technical-bars .bar {
       margin-top: 15px;
+    }
+    
+    .slideshow{
+      margin-top: -200%;
     }
   
     .contact {

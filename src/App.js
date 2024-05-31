@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Typed from 'typed.js';
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
+import Slideshow from './Slideshow';
 
 function App() {
 
@@ -28,6 +29,43 @@ function App() {
   }, []);
 
 
+  // images
+  const hangmanImages = [
+    './Projects/hangman/home.png',
+    './Projects/hangman/img1.png',
+    './Projects/hangman/timeup.png',
+    './Projects/hangman/img2.png',
+    './Projects/hangman/img3.png',
+    './Projects/hangman/gameover.png', 
+];
+
+const onlineCompilerImages =[
+  './Projects/onlineCompiler/home.png',
+  './Projects/onlineCompiler/img1.png',
+  './Projects/onlineCompiler/img2.png',
+  './Projects/onlineCompiler/img3.png',
+  './Projects/onlineCompiler/img4.png',
+]
+
+const weatherAppImages =[
+  './Projects/weatherApp/home.png',
+  './Projects/weatherApp/img1.png',
+  './Projects/weatherApp/img2.png',
+
+]
+
+const [showSlideshow, setShowSlideshow] = useState(false);
+const [currentProjectImages, setCurrentProjectImages] = useState([]);
+
+const handleImageIconClick = (images) => {
+    setCurrentProjectImages(images);
+    setShowSlideshow(true);
+};
+const handleCloseSlideshow = () => {
+  setShowSlideshow(false);
+};
+
+
   return (
     <>
     <div className="body">
@@ -39,17 +77,21 @@ function App() {
 
         <nav className="navbar">
           <a href="#" style={{ "--i": "1" }} className="active">
-          <i class="fa-solid fa-house"></i><span>Home</span> 
+          <i class="fa-solid fa-house"></i><span>&ensp;Home</span> 
           </a>
           <a href="#about" style={{ "--i": "2" }}>
-          <i class="fa-solid fa-address-book"></i> <span>About</span>
+          <i class="fa-solid fa-address-book"></i><span>&ensp;About</span>
           </a>
           <a href="#services" style={{ "--i": "3" }}>
-          <i class="fa-solid fa-laptop-code"></i><span>Skills</span> 
+          <i class="fa-solid fa-laptop-code"></i><span>&ensp;Services</span> 
           </a>
           <a href="#skills" style={{ "--i": "4" }}>
-          <i class="fa-solid fa-list-check"></i><span>Projects</span> 
+          <i class="fa-solid fa-list-check"></i><span>&ensp;Skills</span> 
           </a>
+          <a href="#projects" style={{ "--i": "4" }}>
+          <i class="fa-solid fa-bars-progress"></i><span>&ensp;Projects</span> 
+          </a>
+          
           <a href="#contact" style={{ "--i": "5" }}>
           <i class="fa-solid fa-envelope"></i> <span>Contact</span> 
           </a>
@@ -92,8 +134,8 @@ function App() {
             </a>
           </div>
 
-          <a href="#"target="_blank" class="btn-box">
-            More About Me
+          <a href="https://drive.google.com/file/d/1-ZUaEzgqAfpERPkyBx1pOGfXVDUmwxz0/view?usp=sharing"target="_blank" class="btn-box">
+            My Resume
           </a>
         </div>
       
@@ -134,7 +176,7 @@ function App() {
             team up and explore how we can mix tech and creativity to shape a
             super cool future! 
           </p>
-          <a href="#" target="_blank"class="btn-box">
+          <a href="https://drive.google.com/file/d/1-ZUaEzgqAfpERPkyBx1pOGfXVDUmwxz0/view?usp=sharing" target="_blank"class="btn-box">
             More About Me
           </a>
         </div>
@@ -342,7 +384,9 @@ function App() {
       </section>
 
 
-      <section>
+{/* my projectcs */}
+
+      <section id="projects">
         <div id="portfolio" >
           <div class="main-text" id="project">
             <h2>
@@ -362,7 +406,7 @@ function App() {
                     {/* <!-- <i class="fas fa-external-link-alt"></i> --> */}
                     <div className="media">
                     <i class="fa-regular fa-image"
-                      style={{ color: "black" }}
+                      style={{ color: "black" }} onClick={() => handleImageIconClick(hangmanImages)}
                     ></i>
 
                     <a href="https://bhuvanesh-hang-man.vercel.app/"target="_blank">
@@ -387,7 +431,7 @@ function App() {
                   
                   <div className="media">
                     <i class="fa-regular fa-image"
-                      style={{ color: "black" }}
+                      style={{ color: "black" } } onClick={() => handleImageIconClick(onlineCompilerImages)}
                     ></i>
                     <a href="https://bhuvanesh-online-compiler.vercel.app/" target="_blank">
                     <i
@@ -408,11 +452,11 @@ function App() {
                   <h5>Weather App</h5>
                   
                   <p>
-                  I developed a weather app using React.js. The app provides real-time weather information and features a clean user interface for easy navigation and data visualization. It demonstrates my ability to integrate APIs in web application.                  </p>
+                  I developed a weather app using React.js. The app provides real-time weather information and features a clean user interface. It demonstrates my ability to integrate APIs in web application.                  </p>
                   
                   <div className="media">
                     <i class="fa-regular fa-image"
-                      style={{ color: "black" }}
+                      style={{ color: "black" }} onClick={() => handleImageIconClick(weatherAppImages)}
                     ></i>
                     <a href="https://bhuvanesh-weather-app.vercel.app/" target="_blank">
                     <i
@@ -429,6 +473,13 @@ function App() {
 
             </div>
           </div>
+              <div className="slideshow">
+                {/* Slideshow */}
+      {showSlideshow && (
+        <Slideshow images={currentProjectImages} onClose={handleCloseSlideshow} />
+      )}
+              </div>
+
         </div>
       </section>
 
