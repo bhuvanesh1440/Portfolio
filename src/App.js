@@ -341,6 +341,7 @@ function App() {
         </div>
       </section>
 
+
       <section>
         <div id="portfolio" >
           <div class="main-text" id="project">
@@ -350,61 +351,82 @@ function App() {
 
             <div class="portfolio-content">
               <div class="row">
-                <img src="./resources/project1.jpeg" alt="" />
+                <img src="./Projects/hangman/home.png" alt="" />
                 <div class="layer">
-                  <h5>UI/UX Design</h5>
+                  <br />
+                  <h5>Hangman Game</h5>
+                  <br />
                   <p>
-                    This is a project for designing UI and UX of an ecommerce
-                    website.This is a project for designing UI and UX of an
-                    ecommerce website.
-                  </p>
-                  <a href=""target="_blank">
+                  Created a Hangman Game with dynamic word selection, hint system, and sound effects. Designed for desktop/laptop playability, providing an engaging user experience.                  </p>
+                  
                     {/* <!-- <i class="fas fa-external-link-alt"></i> --> */}
+                    <div className="media">
+                    <i class="fa-regular fa-image"
+                      style={{ color: "black" }}
+                    ></i>
+
+                    <a href="https://bhuvanesh-hang-man.vercel.app/"target="_blank">
                     <i
                       class="fas fa-external-link-alt"
                       style={{ color: "black" }}
-                    ></i>
-                  </a>
+                    ></i></a>
+                    </div>
+                  
                 </div>
               </div>
 
               <div class="row">
-                <img src="./resources/project1.jpeg" alt="" />
+                <img src="./Projects/onlineCompiler/home.png" alt="" />
                 <div class="layer">
-                  <h5>UI/UX Design</h5>
+                  <br />
+                  <h5>Online Compiler</h5>
+                  <br />
                   <p>
-                    This is a project for designing UI and UX of an ecommerce
-                    website.This is a project for designing UI and UX of an
-                    ecommerce website.
+                  I built an online compiler using React.js, demonstrating my expertise in front-end development. This project allows users to compile and run code directly in their browsers.
                   </p>
-                  <a href="">
+                  
+                  <div className="media">
+                    <i class="fa-regular fa-image"
+                      style={{ color: "black" }}
+                    ></i>
+                    <a href="https://bhuvanesh-online-compiler.vercel.app/" target="_blank">
                     <i
                       class="fas fa-external-link-alt"
                       style={{ color: "black" }}
                     ></i>
-                    {/* <!-- <i class="fas fa-arrow-alt-circle-up" style="color: aliceblue;"></i> --> */}
-                  </a>
+                    </a>
+                    </div>
+                  
                 </div>
               </div>
 
+              
               <div class="row">
-                <img src="./resources/project1.jpeg" alt="" />
+                <img src="./Projects/weatherApp/home.png" alt="" />
                 <div class="layer">
-                  <h5>UI/UX Design</h5>
+                  <br />
+                  <h5>Weather App</h5>
+                  
                   <p>
-                    This is a project for designing UI and UX of an ecommerce
-                    website.This is a project for designing UI and UX of an
-                    ecommerce website.
-                  </p>
-                  <a href="">
-                    {/* <!-- <i class="fas fa-external-link-alt"></i> --> */}
+                  I developed a weather app using React.js. The app provides real-time weather information and features a clean user interface for easy navigation and data visualization. It demonstrates my ability to integrate APIs in web application.                  </p>
+                  
+                  <div className="media">
+                    <i class="fa-regular fa-image"
+                      style={{ color: "black" }}
+                    ></i>
+                    <a href="https://bhuvanesh-weather-app.vercel.app/" target="_blank">
                     <i
                       class="fas fa-external-link-alt"
                       style={{ color: "black" }}
                     ></i>
-                  </a>
+                    </a>
+                    </div>
+                  
                 </div>
               </div>
+
+
+
             </div>
           </div>
         </div>
